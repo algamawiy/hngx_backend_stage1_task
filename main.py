@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Query, status
+from fastapi import FastAPI
 from datetime import datetime, timedelta
 from pydantic import BaseModel
 
@@ -32,7 +32,7 @@ async def get_info(
         current_day = current_day_of_week, 
         utc_time = current_utc_time,
         track = track,
-        github_file_url = "",
+        github_file_url = "https://github.com/algamawiy/hngx_backend_stage1_task/blob/feature1/main.py",
         github_repo_url = "https://github.com/algamawiy/hngx_backend_stage1_task",
         status_code = 200
         )
